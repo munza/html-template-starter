@@ -1,0 +1,45 @@
+{
+  "css": {
+    "src": "./src/scss/*.scss",
+    "dest": "./dist/css",
+    "watch": "./src/scss/**/*"
+  },
+  "autoprefixer": {},
+  "js": {
+    "src": "./src/scripts/*.js",
+    "dest": "./dist/js",
+    "watch": "./src/scripts/**/*"
+  },
+  "fonts": {
+    "src": "./src/fonts/**/*",
+    "dest": "./dist/fonts",
+    "watch": "./src/fonts/**/*"
+  },
+  "images": {
+    "src": "./src/images/**/*",
+    "dest": "./dist/images",
+    "watch": "./src/images/**/*"
+  },
+  "html": {
+    "src": "./src/*.njk",
+    "dest": "./dist",
+    "watch": "./src/**/*.njk"
+  },
+  "clean": {
+    "src": "./dist",
+    "force": true
+  },
+  "serve": {
+      "server": "./dist"
+  },
+  "copy": [
+    {
+      "src": "./node_modules/bootstrap-sass/assets/fonts/**",
+      "dest": "./dist/fonts"
+    },
+    {
+      "src": "./node_modules/bootstrap-sass/assets/images/**",
+      "dest": "./dist/images"
+    }
+  ]
+}
