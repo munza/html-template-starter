@@ -26,10 +26,15 @@
     "watch": "./src/**/*.njk"
   },
   "clean": {
-    "src": "./dist",
-    "force": true
+    "src": [
+      "./dist/**/*.*",
+      "./dist"
+    ],
+    "options": {
+      "read": false
+    }
   },
-  "serve": {
+  "browserSync": {
       "server": "./dist"
   },
   "copy": [
